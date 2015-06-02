@@ -1,4 +1,4 @@
-<div class=page-header'>
+<div class='page-header'>
   <%= link_to 'New Product', new_product_path, class: 'btn btn-success pull-right' %>
   <h3>All Products</h3>
 </div>
@@ -9,7 +9,7 @@
       <h2><%= product.name %></h2>
       <img class='img-responsive' src=<%=asset_path(product.featImage) %>/>
       <p><%= product.description %></p>
-      <h4>$<%= product.price %><h4>
+      <h4>$<%= product.price %></h4>
       <%= link_to 'Show', product, class: 'btn btn-primary' %>
     </div>
   <% end %>
